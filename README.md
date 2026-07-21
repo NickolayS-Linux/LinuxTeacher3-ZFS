@@ -53,6 +53,43 @@ Oracle VirtualBox (https://www.virtualbox.org/wiki/Linux_Downloads).
 
 Создаю пул из двух дисков в режиме RAID 1:
 
+<img width="756" height="411" alt="image" src="https://github.com/user-attachments/assets/adc338c8-875c-4e27-bae9-55d6660a835b" />
+
+Создам еще 3 пула, итого:
+
+<img width="759" height="96" alt="image" src="https://github.com/user-attachments/assets/94a0c905-b97b-4e42-9c71-948af8affa55" />
+
+Проверим статус дисков:
+
+<img width="753" height="644" alt="image" src="https://github.com/user-attachments/assets/8023c2bc-6395-4674-b28d-144c4e26fdca" />
+
+
+Добавлю разные алгоритмы сжатия в каждую файловую систему:
+
+<img width="757" height="123" alt="image" src="https://github.com/user-attachments/assets/72c97229-54f2-458c-8611-53bfd218900f" />
+
+Проверю, что все файловые системы имеют разные методы сжатия:
+
+<img width="756" height="126" alt="image" src="https://github.com/user-attachments/assets/06db6924-beaf-496d-92c1-f4323dc88c4a" />
+
+Сжатие файлов будет работать только с файлами, которые были добавлены после включение настройки сжатия. 
+
+Скачаю один и тот же текстовый файл во все пулы:
+
+Процесс:
+
+<img width="756" height="629" alt="image" src="https://github.com/user-attachments/assets/587b40ac-32d3-4331-8496-0a07b312c2bd" />
+
+Проверим, что файл был скачан во все пулы:
+
+<img width="759" height="311" alt="image" src="https://github.com/user-attachments/assets/153f9272-f386-4c1d-b142-866066af30bb" />
+
+Уже на этом этапе видно, что самый оптимальный метод сжатия у нас используется в пуле zfstest3.
+Проверим, сколько места занимает один и тот же файл в разных пулах и проверим степень сжатия файлов:
+
+
+
+
 
 
 
